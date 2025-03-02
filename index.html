@@ -1,43 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Snake Game</title>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-			crossorigin="anonymous"
-		/>
-		<link rel="stylesheet" href="./css/style.css" />
-	</head>
-	<body class="text-bg-dark">
-		<div class="container">
-			<div class="row min-vh-100 align-items-center justify-content-center">
-				<div class="col">
-					<h3 class="text-center mb-3">Snake Game</h3>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Snake Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="text-bg-dark">
+    <div class="container">
+      <!-- <div class="row min-vh-100 align-items-center justify-content-center"> -->
+      <div
+        class="row align-items-center justify-content-center"
+        style="min-height: calc(100vh - 68px)"
+      >
+        <div class="col">
+          <h3 class="text-center mb-3 text-success">Snake Game🐍</h3>
 
-					<h6 class="text-center mb-3" id="indicator-game">Not Started</h6>
+          <h6 class="text-center mb-3" id="indicator-game">
+            Press Enter to Start
+          </h6>
 
-					<div class="text-center mb-3">
-						<canvas
-							class="border border-secondary border-opacity-25 border-3"
-							id="board"
-							width="400"
-							height="400"
-						></canvas>
-					</div>
+          <div class="text-center mb-3">
+            <canvas
+              class="border border-secondary border-opacity-25 border-3"
+              id="board"
+              width="400"
+              height="400"
+            ></canvas>
+          </div>
 
-					<div class="row justify-content-between">
-						<div class="col-auto">Score : <span id="score">0</span></div>
-						<div class="col-auto">Level : <span id="level">1</span></div>
-					</div>
-				</div>
-			</div>
-		</div>
+          <div class="row justify-content-between">
+            <div class="col-auto">Score : <span id="score">0</span></div>
+            <div class="col-auto">Level : <span id="level">1</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<script src="js/main.js"></script>
-	</body>
+    <footer class="border-top">
+      <h6 class="text-center py-4 bg-dark m-0">
+        Created with <span class="text-danger">❤</span> by
+        <a class="link-light" href="https://github.com/akmalluthfi">
+          akmalluthfi
+        </a>
+      </h6>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
